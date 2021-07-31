@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, body{
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+}
+
+body{
+  min-width: fit-content;
+}
+
+
+/*set variable */
+:root{
+  --firstColor: #218380;
+  --secondcolor: #FFBC42;
+  --thirdColor: #8F2D56;
+  --fourthColor: #D81159;
+  --fifthColor: #73D2DE;
+  --luckiest:   'Luckiest Guy', cursive;
+  --progress-bar-stroke-width: 1.8;
+  --progress-bar-size: 70px;
+
+
+}
+
+/* Links*/
+a{
+  text-decoration: none;
+}
+
+.surroundingBody{
+  background-color: var(--firstColor);
+ 
+}
+
+.firstSection{
+  padding: 0 .9rem;
+  position: relative;
+
+}
+.centerFirstSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.firstNameText div{
+  font-weight: bold;
+}
+.firstBlock{
+  color: var(--secondcolor);
+}
+.secondBlock{
+font-size: 4rem;
+color: white;
+font-family: var(--luckiest);
+letter-spacing: .2rem;
+}
+.thirdBlock{
+  color: var(--secondcolor);  
+  background-color: var(--fourthColor);
+  padding: .7rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  font-family: var(--luckiest);
+  letter-spacing: .2rem;
+
+}
+.imageBackground{
+  display: inline-block;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+}
+.custom-shape-divider-top-1627604960 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  overflow: hidden;
+}
+img{
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+}
+
+/*second section ABOUT */
+.secondSection{
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+
+}
+.aboutSvg{
+  width: 10rem;
+  position: relative;
+}
+.centerSecondSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  padding: 9px;
+  font-weight: bold;
+}
+.title{
+  font-family: var(--luckiest);
+  color: var(--secondcolor);
+  font-size: 2rem;
+}
+.downloadCV{
+  background-color: var(--thirdColor);
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--luckiest);
+  letter-spacing: 1px;
+}
+
+.svgIndex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.itemsSvg{
+  position: relative;
+  z-index: 1;
+}
+.aboutMe{
+ color: white;
+ width: 100%;
+ text-align: center;
+}
+.aboutBody{
+  padding: 10px 0;
+}
+.aboutBody>div>p{
+font-weight: bold;
+padding: 9px 0 ;
+letter-spacing: 1px;
+color: var(--secondcolor)
+}
+.serviceItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*services */
+.smallSvg{
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondcolor);
+}
+
+.serviceItem{
+
+}
+/* skilss */
+.codeImages{
+  position: absolute;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  justify-self: center;
+  
+}
+.educationContainer>div:nth-child(1){
+  font-family: var(--luckiest);
+  letter-spacing: 1px;
+}
+.educationContainer>div{
+  padding: 4px;
+}
+.center{
+  margin: auto;
+}
+.Angular{
+  width: 40%;
+
+}
+.Node{
+  width: 95%;
+
+}
+.React{
+  width: 95%;
+
+}
+.springBoot{
+  width: 55%;
+
+}
+.MySql{
+  width: 95%;
+
+}
+.MongoDB{
+  width: 95%;
+
+}
+.rectMeter{
+background-color: var(--secondcolor);
+height: 5px;
+}
+.rectRail{
+  background-color: #528f8d;
+  height: 5px;
+  width: 60%;
+  
+}
+.labels{
+  padding: 0px 9px;
+  font-family: var(--luckiest);
+  letter-spacing: 1px;
+vertical-align: bottom;
+line-height: 5px;
+}
+.rectBars{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.circleBars{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.circleSvg{
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.circleSvg svg {
+  height: var(--progress-bar-size);
+  width: var(--progress-bar-size);
+}
+
+.progress-bar__background {
+  fill: none;
+  stroke: #FFBC42;
+  stroke-width: var(--progress-bar-stroke-width);
+}
+
+.progress-bar__progress {
+  fill: none;
+  stroke: #e2eff0;
+  stroke: var(--fourthColor);
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: var(--progress-bar-stroke-width);
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+/*works */
+.projectOne{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: .9rem 0;
+  width: 100%;
+}
+
+.numberTag{
+  width: 10rem;
+  height: 5rem;
+  background-color: var(--fourthColor);
+  border-top-left-radius: 19px;
+  border-bottom-left-radius: 19px;
+  position: relative;
+
+}
+
+.numberTag>div:nth-child(1){
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: var(--luckiest);
+  letter-spacing: 2px;}
+.centerProject{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 5rem;
+  padding: 0 9px;
+  font-size: 2rem;
+  font-family: var(--luckiest);
+}
+.popover{
+  background-color: var(--fifthColor);
+  border-radius: 5px;
+  position: absolute;
+  bottom: -6rem;
+  color: var(--thirdColor);
+  right: 0px;
+  width: 15rem;
+  padding: 8px;
+  font-weight: bold;
+  font-family: var(--luckiest);
+  letter-spacing: 1px;
+}
+.hide{
+  display: none;
+}
+.popover a, .popoverSecond a{
+  font-family: var(--luckiest);
+  color: var(--firstColor);
+  text-decoration: underline;
+}
+.popoverSecond{
+  background-color: var(--fifthColor);
+  border-radius: 5px;
+  position: absolute;
+  top: -6rem;
+  color: var(--thirdColor);
+  right: 0px;
+  width: 15rem;
+  padding: .8rem;
+  font-weight: bold;
+  font-family: var(--luckiest);
+  letter-spacing: .1rem;
+  z-index: 1;
+}
+
+
+
+/*header */
+.warrriorSvg{
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+
+} 
+.divider{
+  margin-top: 20px;
+  height: .2rem;
+  width: 5rem;
+background-color: var(--fourthColor);
+}
+.warrior{
+  padding: 9px 0px 0px 15px;
+}
+.warrior div:nth-child(2){
+  display: inline-block;
+  position: relative;
+  top: -2rem;
+  color: white;
+  font-weight: bold;
+}
+.socialMedia{
+  position: absolute;
+  top: 0px;
+  left:  20px;
+  width: 20px;
+  height: 20px;
+}
+.servicesDetails{
+  padding: 4px;
+}
+
+@media only screen and (min-width: 650px){
+
+html{
+  font-size: 100%;
+}
+
+}
