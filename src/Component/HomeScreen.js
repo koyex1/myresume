@@ -14,7 +14,7 @@ import JavascriptSvg from '../Svg/JavascriptSvg'
 import JavaSvg from '../Svg/JavaSvg'
 import PythonSvg from '../Svg/PythonSvg'
 import { useInView } from 'react-intersection-observer';
-import resume from '../Assets/resume.pdf'
+import resume from '../Assets/OLUMIDE-KOYENIKAN.pdf'
 import { Link } from 'react-router-dom'
 
 
