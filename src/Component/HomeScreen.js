@@ -20,10 +20,13 @@ import { Link } from 'react-router-dom'
 
 
 function HomeScreen() {
-    const [refTwo, inViewTwo ] = useInView({threshold: 1})
+    const [refTwo, inViewTwo ] = useInView({threshold: 0})
 
 
     const [refOne, inViewOne ] = useInView({threshold: 0})
+
+    const [refThree, inViewThree ] = useInView({threshold: 0})
+
 
     const handleEdu = () =>{
         window.open("http://edudigitals.herokuapp.com", '_blank')
@@ -35,6 +38,11 @@ function HomeScreen() {
 
     const handleGit = () =>{
         window.open("http://github.com/koyex1" , '_blank' )
+    }
+
+    const handleVideo = () =>{
+        window.open("https://drive.google.com/file/d/1jfgQ_UjGHL5g_7-F09B-Okv0wYGcI8gD/view?usp=sharing" , '_blank' )
+
     }
 
 
@@ -52,7 +60,7 @@ function HomeScreen() {
                     <div className="firstNameText">
                         <div className="firstBlock">Hi there</div>
                         <div className="secondBlock">I AM OLUMIDE</div>
-                        <div className="thirdBlock">A FRONTEND AND BACKEND DEVELOPER</div>
+                        <div className="thirdBlock">AUTOMATION/QA TESTER, FRONTEND AND BACKEND DEVELOPER</div>
                     </div>
                 </div>
                 <div className="socialMedia">
@@ -83,11 +91,11 @@ function HomeScreen() {
                     <div className="aboutMe">
                         <div className="title"> ABOUT ME</div>
                         <div className="aboutBody">
-                            <p>Hi, I'm a frontend developer, passionate about creating and developing web interfaces. I have a lot of experience in this area of work, with multiple quality projects</p>
+                            <p>Hi, I'm a Automation/QA Tester and Frontend/Backend developer, passionate about creating magic. I have a lot of experience in this area of work, with multiple quality projects</p>
                             <div>
                                 <p>Name: Olumide Koyenikan</p>
                                 <p>Email: olumide.koyenikan@gmail.com</p>
-                                <p>2+ Years Experience</p>
+                                <p>4+ Years Experience</p>
                                 <p>Several projects completed</p>
                                 <p>Ready for all kinds of jobs</p>
                                 <p>Rapid Learner</p>
@@ -209,6 +217,33 @@ function HomeScreen() {
 
                         </div>
 
+                        <div className="rectBars">
+                            <div className="labels">Selenium</div>
+                            <div className="rectRail  ">
+                                <div className="rectMeter Selenium "></div>
+                            </div>
+                            <div className="labels">90%</div>
+
+                        </div>
+
+                        <div className="rectBars">
+                            <div className="labels">RestAssured</div>
+                            <div className="rectRail  ">
+                                <div className="rectMeter RestAssured "></div>
+                            </div>
+                            <div className="labels">90%</div>
+
+                        </div>
+
+                        <div className="rectBars">
+                            <div className="labels">Appium</div>
+                            <div className="rectRail  ">
+                                <div className="rectMeter Appium "></div>
+                            </div>
+                            <div className="labels">60%</div>
+
+                        </div>
+
 
                         <div>
                             <div style={{ marginTop: '7px' }} className="smallSvg center" >
@@ -276,7 +311,22 @@ function HomeScreen() {
                                     <div className="servicesDetails">The service that I offer is of high quality garnered from several complex projects with complex architectures using different languages</div>
                                 </div>
 
+                                
+
                             </div>
+                            <div className="serviceItem">
+                                <div style={{ marginTop: '17px' }} className="smallSvg">
+                                    <BackendSvg />
+                                </div>
+                                
+
+                                <div>
+                                    <div  >  AUTOMATION/QA TESTING</div>
+                                    <div className="servicesDetails">Experience Testing Web, Mobile, Desktop apps using testing tools like JIRA, Jmeter, Database Management tools, TestRail, GitHub, Git Bash, Selenium, Gherkin (Cucumber), Allure (Test Analysis Tool), BrowserStack, TeamViewer, POSTMAN, SOAPUI, PuTTY, powershell, Manual Test Exectution tools for easy test documentation, and a Private End-to-End Test Execution platforms.</div>
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
@@ -309,30 +359,47 @@ function HomeScreen() {
                         <div>
 
                             <div className="projectOne">
-                                <div  className={"centerProject"}>
+                                <div ref={refOne}  className={"centerProject"}>
                                     React JS
                                 </div>
                                 <div className="numberTag">
                                 <div>01</div>
-                                    <div className={inViewOne?"popoverSecond":"hide"}>
-                                        Click <Link onClick={handleCrazy} >Here</Link> to explore website
+                                    <div className={inViewOne?"popover":"hide"}>
+                                         <Link onClick={handleCrazy} >view</Link>
                                         
                                     </div>
                                 </div>
+                                <div ref={refOne}></div>
 
                             </div>
                             <div className="projectOne">
-                                <div ref={refOne} className="centerProject">
+                                <div  className="centerProject">
                                     React & Node JS
                                 </div>
                                 <div className="numberTag">
                                     <div>02</div>
                                     <div className={inViewTwo?"popover":"hide"}>
-                                        Click <Link onClick={handleEdu} >Here</Link> to explore website
+                                         <Link onClick={handleEdu} >view</Link> 
                                         
                                     </div>
 
                                 </div>
+                                    <div ref={refTwo}></div>
+                            </div>
+
+                            <div className="projectOne">
+                                <div  className="centerProject">
+                                Java Selenium + RestAssured + DB Testing (Using Jenkins, ReactJS, SpringBoot Websocket, Allure, TestNG, cucumber BDD and GitHub)
+                                </div>
+                                <div className="numberTag">
+                                    <div>03</div>
+                                    <div className={inViewThree?"popover":"hide"}>
+                                         <Link onClick={handleVideo} >view</Link> 
+                                        
+                                    </div>
+
+                                </div>
+                                <div ref={refThree}></div>
 
                             </div>
 
@@ -347,7 +414,7 @@ function HomeScreen() {
             </div>
 
             <div  className="secondSection">
-                <div ref={refTwo}></div>
+                <div ></div>
 
                 <div className="centerSecondSection">
 
@@ -369,8 +436,8 @@ function HomeScreen() {
                         <div className="title"> CONTACT ME</div>
                         <div className="aboutBody">
                             <p>Email: olumide.koyenikan@gmail.com</p>
-                            <p>Tel: +23490654564654</p>
-                            <p>Lagos, Nigeria</p>
+                            <p>Tel: +2349063303923</p>
+                            <p>Benin city, Nigeria</p>
 
                         </div>
 
