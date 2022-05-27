@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myresume/static/css/main.f8e5c9d9.chunk.css",
-    "main.js": "/myresume/static/js/main.39ac38b7.chunk.js",
-    "main.js.map": "/myresume/static/js/main.39ac38b7.chunk.js.map",
+    "main.js": "/myresume/static/js/main.b2766bf2.chunk.js",
+    "main.js.map": "/myresume/static/js/main.b2766bf2.chunk.js.map",
     "runtime-main.js": "/myresume/static/js/runtime-main.1e392435.js",
     "runtime-main.js.map": "/myresume/static/js/runtime-main.1e392435.js.map",
     "static/js/2.dedb0ba4.chunk.js": "/myresume/static/js/2.dedb0ba4.chunk.js",
@@ -12,13 +12,13 @@
     "index.html": "/myresume/index.html",
     "static/css/main.f8e5c9d9.chunk.css.map": "/myresume/static/css/main.f8e5c9d9.chunk.css.map",
     "static/js/2.dedb0ba4.chunk.js.LICENSE.txt": "/myresume/static/js/2.dedb0ba4.chunk.js.LICENSE.txt",
-    "static/media/OLUMIDE-KOYENIKAN.f3715204.pdf": "/myresume/static/media/OLUMIDE-KOYENIKAN.f3715204.pdf",
+    "static/media/OLUMIDE-KOYENIKAN.9adf4f3a.pdf": "/myresume/static/media/OLUMIDE-KOYENIKAN.9adf4f3a.pdf",
     "static/media/dp1.6f8ffc50.png": "/myresume/static/media/dp1.6f8ffc50.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1e392435.js",
     "static/js/2.dedb0ba4.chunk.js",
     "static/css/main.f8e5c9d9.chunk.css",
-    "static/js/main.39ac38b7.chunk.js"
+    "static/js/main.b2766bf2.chunk.js"
   ]
 }
